@@ -29,7 +29,7 @@
         <ion-footer>
             <ion-toolbar >
                 <ion-item lines="none">
-                    <ion-button class="ion-text-wrap" color="danger" style="max-width: 400px">
+                    <ion-button class="ion-text-wrap" color="danger" href="/login" style="max-width: 400px">
                         Logout
                     </ion-button>
                 </ion-item>
