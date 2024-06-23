@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import OrderView from '@/views/OrderView.vue';
 import OrderDetailsView from '@/views/OrderDetailsView.vue';
 import HomeView from '@/views/HomeView.vue';
+import LoginView from '@/views/LoginView.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/orderdetails/:id',
     name: 'orderdetails',
     component: OrderDetailsView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
   }
 ]
 

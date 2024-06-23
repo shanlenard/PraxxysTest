@@ -5,7 +5,7 @@
                     <ion-menu-button></ion-menu-button>
                 </ion-buttons>
         <ion-title>
-            <RouterLink to="/order">Praxxys</RouterLink> 
+            <strong>{{ name }}</strong>
         </ion-title>
         </ion-toolbar>
     </ion-header>
@@ -13,4 +13,7 @@
 
 <script setup>
 import { IonHeader, IonToolbar, IonTitle } from '@ionic/vue';
+defineProps({
+  name: String,
+});
 </script>

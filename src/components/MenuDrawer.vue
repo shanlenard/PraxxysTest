@@ -40,4 +40,8 @@
 
 <script setup>
 import {  IonHeader, IonToolbar } from '@ionic/vue';
+
+defineProps({
+  name: String,
+});
 </script>
