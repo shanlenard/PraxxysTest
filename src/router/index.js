@@ -1,32 +1,23 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import TabsPage from '../views/TabsPage.vue'
+import OrderView from '@/views/OrderView.vue';
+import OrderDetailsView from '@/views/OrderDetailsView.vue';
+import HomeView from '@/views/HomeView.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    name: 'home',
+    component: HomeView
   },
   {
-    path: '/tabs/',
-    component: TabsPage,
-    children: [
-      {
-        path: '',
-        redirect: '/tabs/tab1'
-      },
-      {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
-      },
-      {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
-      },
-      {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
-      }
-    ]
+    path: '/order',
+    name: 'order',
+    component: OrderView
+  },
+  {
+    path: '/orderdetails',
+    name: 'orderdetails',
+    component: OrderDetailsView
   }
 ]
 
