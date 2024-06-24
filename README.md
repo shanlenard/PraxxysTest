@@ -1,3 +1,6 @@
+[Pre-requisites]
+1. Latest Node js installed
+
 Installation
 1. Clone repository
 2. Open terminal
